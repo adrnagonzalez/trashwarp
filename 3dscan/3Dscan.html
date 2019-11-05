@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Adrian Gonzalez - Sculpting Realities - CARWASH</title>
+    <meta name="3D" content="Sculpting Realities-3D">
+    <script src="https://aframe.io/releases/0.9.0/aframe.min.js"></script>
+   
+
+  </head>
+
+  <body>
+
+    <a-scene>
+      
+      <a-assets>
+           <img id="sky" src="scans/pinksky.jpg">
+           <img id="bluesky" src="scans/bluesky.jpg">
+           <a-asset-item id="grapes" src="scans/grapes/model.obj"></a-asset-item>
+           <a-asset-item id="grapeslmtl" src="scans/grapes/model.mtl"></a-asset-item>
+           <a-asset-item id="hand" src="scans/hands/model.obj"></a-asset-item>
+           <a-asset-item id="handmtl" src="scans/hands/model.mtl"></a-asset-item>
+           <a-asset-item id="earphones" src="scans/earbuds.obj"></
+           <a-asset-item id="earphonesmtl" src="scans/earbuds.mtl"></a-asset-item>
+           <a-asset-item id="tire" src="scans/Untitled copy.obj"></a-asset-item>
+           <a-asset-item id="tiremtl" src="scans/Untitled copy.mtl"></a-asset-item>
+           <a-asset-item id="phone" src="scans/phone.obj"></a-asset-item>
+           <a-asset-item id="phonemtl" src="scans/phone.mtl"></a-asset-item>
+      </a-assets>
+
+      <a-obj-model id="grapes" src="#grapes" mtl="#grapesmtl" scale="100 100 100" position="-40 60 6.9" rotation=" 0 0 0"></a-obj-model>
+      <a-obj-model id="hand" src="#hand" mtl="#handmtl" color="pink" scale="80 80 80" position="-66.14 -16.95 76.164" 
+    rotation=" -10 0 0"></a-obj-model>
+    <a-obj-model id="earphones" src="#earphones" mtl="#earphonesmtl" scale="100 100 100" position="-15.28 -6.181 -10.49" rotation=" 0 0 0"></a-obj-model>
+    <a-obj-model id="tire" src="#tire" mtl="#tiremtl" scale=".01 .01 .01" position="0.252 -2.755 -11.66" rotation=" -90 40 0"></a-obj-model>
+    <a-obj-model id="phone" src="#phone" mtl="#phonemtl" scale=".25 .25 .25" position="-13.45 0,172 -11.914" rotation="-25 0 23"></a-obj-model>
+
+    <a-plane src="#bluesky" id="back" height="60" width="78" position="-9.815 29.027 -54.79"rotation="0 0 0"></a-plane>
+    <a-plane src="#bluesky" id="left" height="60" width="78" position="-37.86 29.378 -21.66"rotation="0 90 0"></a-plane>
+    <a-plane src="#bluesky" id="right" height="60" width="78" position="18.850 29.378 -21.66"rotation="0 270 0"></a-plane>
+    <a-plane src="#bluesky" id="right" height="60" width="78" position="-9.815 29.027 5.988"rotation="0 180 0"></a-plane>
+
+
+
+      <a-sky src="#sky"></a-sky>
+
+
+
+    </a-scene> 
+   
+  </body>
+</html>
+
+
+  
